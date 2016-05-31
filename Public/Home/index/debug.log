@@ -1,0 +1,3 @@
+[0422/014106:ERROR:proxy_service_factory.cc(105)] Cannot use V8 Proxy resolver in single process mode.
+[0422/014110:ERROR:proxy_service_factory.cc(105)] Cannot use V8 Proxy resolver in single process mode.
+[0422/014220:ERROR:proxy_service_factory.cc(105)] Cannot use V8 Proxy resolver in single process mode.

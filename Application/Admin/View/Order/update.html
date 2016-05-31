@@ -1,0 +1,32 @@
+<include file="Public/header" title="更新礼品" />
+<div id="page-wrapper">
+    <form method="post" action="{:U('order/update')}">
+     <div class="form-group">
+            <label for="aa">真实姓名</label>
+            <input type="text" name="realname" class="form-control" id="aa" readonly="readonly" value="{$model.realname}" placeholder="输入礼品名称">
+        </div>
+        <div class="form-group">
+            <label for="aa">礼品名称</label>
+            <input type="text" name="gift" class="form-control" id="aa" readonly="readonly" value="{$model.gift}" placeholder="输入礼品名称">
+        </div>
+        <div class="form-group">
+            <label for="bb">收货地址</label>
+            <input type="text" name="location" class="form-control" id="bb" value="{$model.location}" placeholder="输入地址">
+        </div>
+        <input type="hidden" name="gid" class="form-control" id="bb" value="{$model.id}" >
+        <div class="form-group">
+            <label for="cc">状态</label>
+            <select name="state">
+            <option value="0">未处理</option>
+            <option value="1">已发货</option>
+            <option value="2">完成</option>
+            <option value="3">已忽略</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="hidden" name="id" value="{$model.id}">
+            <button type="submit" class="btn btn-default">更新</button>
+        </div>
+    </form>
+</div>
+<include file="Public/footer" />
